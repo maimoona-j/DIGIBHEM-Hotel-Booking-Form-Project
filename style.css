@@ -444,7 +444,6 @@ footer {
 /* media queries */
 
 @media (max-width: 768px) {
-  
   #home {
     flex-direction: column;
   }
@@ -495,7 +494,6 @@ footer {
   .room-container {
     padding-left: 160px;
     margin-top: 40px;
-   
   }
 
   .room img {
@@ -565,8 +563,8 @@ footer {
     position: relative;
     margin: 20px auto;
     top: 10%;
-    left: 20%;
-    right: 5%;
+    left: 25%;
+   
     border-color: rgb(223, 65, 152);
   }
 
@@ -574,14 +572,14 @@ footer {
     position: relative;
     margin: 20px auto;
     top: 10%;
-    left: auto;
+    left: 25%;
   }
 
   #form3 {
     position: relative;
     margin: 20px auto;
     top: 10%;
-    left: auto;
+    left: 25%;
   }
 
   /* card */
@@ -605,8 +603,7 @@ footer {
   .room-container {
     width: 60px;
     margin-top: 40px;
-   padding-right: 200px;
-  
+    padding-right: 200px;
   }
 
   .room img {
