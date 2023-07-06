@@ -1,19 +1,3 @@
-const header = document.querySelector(".navbar");
-
-window.onscroll = function () {
-  var top = window.scrollY;
-  if (top >= 100) {
-    header.classList.add("navbarDark");
-    header.style.backgroundColor = "lightblue";
-    header.style.boxShadow = "2px 4px 5px rgba(0, 0, 0, 0.2)";
-  } else {
-    header.classList.remove("navbarDark");
-    header.style.backgroundColor = "";
-    header.style.boxShadow = "";
-  }
-}; 
-
-
 const form1 = document.getElementById("form1");
 const form2 = document.getElementById("form2");
 const form3 = document.getElementById("form3");

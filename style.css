@@ -1,7 +1,7 @@
 /* Navbar */
 
 .navbar {
-  background-color: rgb(139, 183, 248);
+  background-color: rgb(223, 65, 152);
   height: 80px;
 }
 
@@ -15,76 +15,32 @@
   padding-left: 8px;
 }
 
-.navbar .navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar li {
-  position: relative;
-  color: rgb(139, 183, 248);
-  display: inline-block;
-}
-
-.navbar li:hover::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 10%;
-  width: 50%;
-  height: 2px;
-  background-color: white;
-}
-
 @media (max-width: 991.98px) {
   .navbar-toggler-icon {
     background-color: white;
   }
 
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background-color: rgb(139, 183, 248);
+  .navbar-collapse.collapse.show .navbar-nav .nav-link {
+    color: black;
   }
 }
 
 /* Landing page */
 
-.landing-page {
+#home {
   height: 100vh;
   width: 100%;
-  position: relative;
   background: url("images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.landing-text {
-  position: absolute;
-  right: 20%;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-}
-
-.landing-btn a {
-  text-decoration: none;
-  color: black;
-}
-
-.landing-btn {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.landing-text .main_title {
-  font-size: 40px;
-}
-
-.landing-text .animated-text {
-  font-size: 24px;
-}
+/* form1 */
 
 #form1 {
   display: flex;
@@ -97,7 +53,7 @@
   font-size: 14px;
   position: absolute;
   top: 20%;
-  left: 70%;
+  left: 35%;
   bottom: 20%;
 }
 
@@ -128,7 +84,6 @@
 
 .input input {
   width: 150px;
-  /* margin: 30px; */
 }
 
 #input1 {
@@ -159,18 +114,13 @@
   margin-left: 150px;
 }
 
-/* #persons {
-  margin-right: 80px;
-} */
-
 #input3 {
-  /* margin: 30px;
-  padding: 5px; */
   padding-left: 30px;
 }
 
 .amen select {
   margin-left: 110px;
+  width: 100px;
 }
 
 .l-btn {
@@ -178,7 +128,7 @@
   margin-top: 40px;
   width: 200px;
   padding: 5px;
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   border-radius: 10px;
 }
 
@@ -195,7 +145,7 @@
   font-size: 14px;
   position: absolute;
   top: 20%;
-  left: 70%;
+  left: 35%;
   bottom: 20%;
 }
 
@@ -203,6 +153,7 @@
   text-align: center;
   margin-top: 5px;
 }
+
 .room-rates {
   border: 2px solid rgb(245, 245, 248);
   border-radius: 10px;
@@ -221,10 +172,6 @@
 .input-container2 {
   position: relative;
   top: 45%;
-
-  /* height: 200px; */
-
-  /* margin-bottom: 60px; */
 }
 
 .input2 {
@@ -271,15 +218,13 @@
   margin: 30px;
   width: 200px;
   padding: 5px;
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   border-radius: 10px;
 }
-
 
 /* form3 */
 
 #form3 {
-  /* display: flex; */
   display: none;
   flex-direction: column;
   border: 2px solid black;
@@ -290,7 +235,7 @@
   font-size: 14px;
   position: absolute;
   top: 20%;
-  left: 70%;
+  left: 35%;
   bottom: 20%;
 }
 
@@ -298,6 +243,7 @@
   text-align: center;
   margin-top: 5px;
 }
+
 .room-rates {
   border: 2px solid rgb(245, 245, 248);
   border-radius: 10px;
@@ -341,19 +287,12 @@
 .form2-btn {
   display: flex;
 }
-.l-btn2 {
-  margin: 30px;
-  width: 200px;
-  padding: 5px;
-  background-color: lightblue;
-  border-radius: 10px;
-}
 
 .l-btn4 {
   margin: 30px;
   width: 200px;
   padding: 5px;
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   border-radius: 10px;
 }
 
@@ -361,23 +300,8 @@
   margin: 30px;
   width: 200px;
   padding: 5px;
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   border-radius: 10px;
-}
-
-/* Media Queries for Landing page */
-@media (max-width: 768px) {
-  .landing-text {
-    margin-top: 10px;
-  }
-
-  .landing-text .main_title {
-    font-size: 30px;
-  }
-
-  .landing-text .animated-text {
-    font-size: 18px;
-  }
 }
 
 /* card */
@@ -392,6 +316,9 @@
   width: 18rem;
 }
 
+.btn {
+  background-color: rgb(223, 65, 152) !important;
+}
 /* room services */
 
 h2 {
@@ -417,10 +344,12 @@ h2 {
   border: 2px solid black;
   height: 500px;
   width: 400px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .room-cont:hover {
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   color: white;
 }
 
@@ -430,11 +359,6 @@ h2 {
 
 #room2 {
   display: flex;
-}
-
-.room-cont {
-  text-align: center;
-  padding-top: 100px;
 }
 
 .r-btn a {
@@ -456,14 +380,14 @@ h2 {
 .test-container {
   display: flex;
 
-  padding-left: 100px;
+  padding-left: 150px;
   margin-top: 80px;
 }
 
 .testimonial-container {
   width: 400px;
   height: 180px;
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   min-width: 400px;
@@ -495,7 +419,7 @@ h2 {
 }
 
 .contact-container {
-  background-color: lightblue;
+  background-color: rgb(223, 65, 152);
   height: 300px;
   text-align: center;
   padding-top: 100px;
@@ -515,4 +439,241 @@ footer {
   background-color: rgb(28, 27, 27);
   color: white;
   text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  
+  #home {
+    flex-direction: column;
+  }
+
+  #form1 {
+    position: relative;
+    margin: 20px auto;
+    top: 30%;
+    left: auto;
+    right: 5%;
+  }
+
+  #form2 {
+    position: relative;
+    margin: 20px auto;
+    top: 10%;
+    left: auto;
+  }
+
+  #form3 {
+    position: relative;
+    margin: 20px auto;
+    top: 10%;
+    left: auto;
+  }
+
+  /* card */
+
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  /* room services */
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .services-heading {
+    margin-top: 20px;
+  }
+
+  .room-container {
+    padding-left: 160px;
+    margin-top: 40px;
+   
+  }
+
+  .room img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .room-cont {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .room-cont p {
+    font-size: 10px;
+  }
+  .room-cont:hover {
+    background-color: rgb(223, 65, 152);
+    color: white;
+  }
+
+  #room1 {
+    display: flex;
+  }
+
+  #room2 {
+    display: flex;
+  }
+
+  .r-btn a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .r-btn {
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* testimonial */
+
+  .test-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  .testimonial-container {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* landing page */
+
+  #home {
+    flex-direction: column;
+    background: none;
+    background-size: 100% 100%;
+  }
+
+  #form1 {
+    position: relative;
+    margin: 20px auto;
+    top: 10%;
+    left: 20%;
+    right: 5%;
+    border-color: rgb(223, 65, 152);
+  }
+
+  #form2 {
+    position: relative;
+    margin: 20px auto;
+    top: 10%;
+    left: auto;
+  }
+
+  #form3 {
+    position: relative;
+    margin: 20px auto;
+    top: 10%;
+    left: auto;
+  }
+
+  /* card */
+
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 180px;
+  }
+
+  /* room services */
+
+  .services-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+
+  .room-container {
+    width: 60px;
+    margin-top: 40px;
+   padding-right: 200px;
+  
+  }
+
+  .room img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .room-cont {
+    height: 200px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .room-cont p {
+    display: none;
+  }
+  .room-cont:hover {
+    background-color: rgb(223, 65, 152);
+    color: white;
+  }
+
+  #room1 {
+    display: flex;
+  }
+
+  #room2 {
+    display: flex;
+  }
+
+  .room-cont {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .r-btn a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .r-btn {
+    padding: 3px;
+
+    font-size: 15px;
+  }
+
+  /* testimonial */
+
+  .client-heading {
+    margin-left: 150px;
+    display: none;
+  }
+
+  .testimonial-container {
+    display: none;
+  }
+
+  /* contact */
+
+  .contact-container {
+    background-color: rgb(223, 65, 152);
+    height: 300px;
+    width: 600px;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  footer {
+    width: 600px;
+  }
 }
